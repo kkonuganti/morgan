@@ -39,7 +39,7 @@ public class Application {
         int mainCount=0;
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         while (stdin.hasNext()) {
-        	if(mainCount==15){
+        	if(mainCount==50){
         		System.out.println("Not Accepting any more sales \n");
         		logger.logAdjustments();
         		System.out.println("\n Terminating the system \n");
