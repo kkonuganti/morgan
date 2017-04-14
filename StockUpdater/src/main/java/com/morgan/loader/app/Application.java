@@ -39,7 +39,7 @@ public class Application {
         int mainCount=0;
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         while (stdin.hasNext()) {
-        	if(mainCount==4){
+        	if(mainCount==15){
         		System.out.println("Not Accepting any more sales \n");
         		logger.logAdjustments();
         		System.out.println("\n Terminating the system \n");
@@ -50,7 +50,7 @@ public class Application {
                 processor.process(stdin.nextLine());
                 
                 
-                if(count==2){
+                if(count==10){
                 	count=0;
                 	logger.setProductIndex(processor.getProductIndex());
                 	logger.logSales();
